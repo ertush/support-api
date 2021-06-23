@@ -1,10 +1,9 @@
 {
-    "name": "agrarian-api",
+    "name": "support-api",
     "version": 2,
     "env": {
-      "DATABASE_ROOT_URI": "@database_root_uri",
-      "ACCESS_TOKEN": "@access_token"
+      "DATABASE_USER_URL": "@database_user_url",
+      "AUTHTOKEN": "@auth_token"
 
     }
-  }
-  
+}
