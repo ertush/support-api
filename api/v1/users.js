@@ -16,8 +16,10 @@ module.exports = async (req, res) => {
       
 
       if(resp.status === 200){
-
+          
+          
           res.redirect(`${process.env.REDIRECT_URL}`)
+          res.status(200).send('Successfuly sent your message. Thank You!')
       }
       else{
         res.status(resp.status).send(resp.statusText)
