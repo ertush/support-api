@@ -13,9 +13,13 @@ module.exports = async (req, res) => {
         baseURL: `${process.env.DATABASE_USER_URL}`,
         data,
       });
+      
 
       if(resp.status === 200){
-          res.status(200).send('Successfully added a user comment')
+          res.status(resp.status).send('Successfully added a user comment')
+      }
+      else{
+        res.status(resp.status).send(resp.statusText)
       }
     }
     else{
