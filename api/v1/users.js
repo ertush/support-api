@@ -16,7 +16,8 @@ module.exports = async (req, res) => {
       
 
       if(resp.status === 200){
-          res.status(resp.status).send('Successfully added a user comment')
+
+          res.redirect(`${process.env.REDIRECT_URL}`)
       }
       else{
         res.status(resp.status).send(resp.statusText)

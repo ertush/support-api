@@ -3,7 +3,7 @@
     "version": 2,
     "env": {
       "DATABASE_USER_URL": "@database_user_url",
-      "AUTHTOKEN": "@auth_token"
-
+      "AUTHTOKEN": "@auth_token",
+      "REDIRECT_URL": "@redirect_url"
     }
 }
